@@ -1,7 +1,7 @@
 {
   "name": "awesome-mac",
   "version": "2.1.0",
-  "description": " This repo is a collection of awesome Mac applications and tools for developers and designers. ",
+  "description": "\uf8ff This repo is a collection of awesome Mac applications and tools for developers and designers. ",
   "homepage": "https://jaywcjlove.github.io/awesome-mac",
   "funding": "https://jaywcjlove.github.io/#/sponsor",
   "main": "dist/awesome-mac.json",
@@ -31,9 +31,9 @@
     "./package.json": "./package.json"
   },
   "scripts": {
-    "start": "npm run build && npm run create:ast",
+    "start": "node init && npm run build && npm run create:ast",
     "doc": "idoc --watch",
-    "build": "idoc",
+    "build": "node init && idoc",
     "create:ast": "node build/ast.mjs",
     "feed": "node build/feed.mjs"
   },
